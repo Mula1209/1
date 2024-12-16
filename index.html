@@ -71,12 +71,12 @@
 
         .contador {
             font-size: 1.5em;
-            margin-top: 20px;
+            margin-top: 10px;
         }
 
         .frase {
-            font-size: 1.5em;
-            margin-top: 10px;
+            font-size: 1.0em;
+            margin-top: 23px;
             color: #dcdcdc;
         }
     </style>
@@ -97,7 +97,8 @@
             <img src="imagem3.jpg" alt="Imagem 3">
         </div>  
 
-        <div class="frase">Estamos juntos há</div>
+       
+        </div>
         <div class="contador" id="contador"></div>
     </div>
 
@@ -122,7 +123,9 @@
             const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
 
             document.getElementById('contador').innerText = 
-                `${anos} anos, ${meses} meses, ${dias} dias, ${horas} horas, ${minutos} minutos, ${segundos} segundos `;
+                `${anos} anos, ${meses} meses, ${dias} dias 
+                ${horas} horas, ${minutos} minutos, ${segundos} segundos 
+                ❤️`;
         }
 
         setInterval(atualizarContador, 1000);
